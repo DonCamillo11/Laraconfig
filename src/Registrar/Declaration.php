@@ -3,7 +3,7 @@
 namespace DonCamillo1\Laraconfig\Registrar;
 
 use Closure;
-use DarkGhostHunter\Laraconfig\Eloquent\Metadata;
+use DonCamillo1\Laraconfig\Eloquent\Metadata;
 
 class Declaration
 {
