@@ -1,11 +1,11 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig\Migrator\Pipes;
+namespace DonCamillo1\Laraconfig\Migrator\Pipes;
 
 use Closure;
-use DarkGhostHunter\Laraconfig\Laraconfig;
-use DarkGhostHunter\Laraconfig\Migrator\Data;
-use DarkGhostHunter\Laraconfig\MorphManySettings;
+use DonCamillo1\Laraconfig\Laraconfig;
+use DonCamillo1\Laraconfig\Migrator\Data;
+use DonCamillo1\Laraconfig\MorphManySettings;
 use Illuminate\Console\OutputStyle;
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Contracts\Config\Repository;
