@@ -1,8 +1,8 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig\Facades;
+namespace DonCamillo1\Laraconfig\Facades;
 
-use DarkGhostHunter\Laraconfig\Registrar\SettingRegistrar;
+use DonCamillo1\Laraconfig\Registrar\SettingRegistrar;
 use Illuminate\Support\Facades\Facade;
 
 /**
