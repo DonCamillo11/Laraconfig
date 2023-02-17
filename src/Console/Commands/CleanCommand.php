@@ -1,8 +1,8 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig\Console\Commands;
+namespace DonCamillo1\Laraconfig\Console\Commands;
 
-use DarkGhostHunter\Laraconfig\Eloquent\Setting;
+use DonCamillo1\Laraconfig\Eloquent\Setting;
 use Illuminate\Console\Command;
 
 /**
