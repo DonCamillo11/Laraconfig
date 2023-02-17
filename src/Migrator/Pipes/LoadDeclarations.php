@@ -1,10 +1,10 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig\Migrator\Pipes;
+namespace DonCamillo1\Laraconfig\Migrator\Pipes;
 
 use Closure;
-use DarkGhostHunter\Laraconfig\Migrator\Data;
-use DarkGhostHunter\Laraconfig\Registrar\SettingRegistrar;
+use DonCamillo1\Laraconfig\Migrator\Data;
+use DonCamillo1\Laraconfig\Registrar\SettingRegistrar;
 
 /**
  * @internal
