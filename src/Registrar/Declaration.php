@@ -1,6 +1,6 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig\Registrar;
+namespace DonCamillo1\Laraconfig\Registrar;
 
 use Closure;
 use DarkGhostHunter\Laraconfig\Eloquent\Metadata;
