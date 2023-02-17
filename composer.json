@@ -6,8 +6,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Italo Baeza C.",
-      "email": "darkghosthunter@gmail.com"
+      "name": "ConCamillo1",
+      "email": "doncamillo1@web.de"
     }
   ],
   "require": {
@@ -31,16 +31,16 @@
   },
   "autoload": {
     "psr-4": {
-      "DarkGhostHunter\\Laraconfig\\": "src"
+      "DonCamillo1\\Laraconfig\\": "src"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "DarkGhostHunter\\Laraconfig\\LaraconfigServiceProvider"
+        "DonCamillo1\\Laraconfig\\LaraconfigServiceProvider"
       ],
       "aliases": {
-        "Setting": "DarkGhostHunter\\Laraconfig\\Facades\\Setting"
+        "Setting": "DonCamillo1\\Laraconfig\\Facades\\Setting"
       }
     }
   },
