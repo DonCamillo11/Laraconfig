@@ -1,9 +1,9 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig\Eloquent\Casts;
+namespace DonCamillo1\Laraconfig\Eloquent\Casts;
 
-use DarkGhostHunter\Laraconfig\Eloquent\Metadata;
-use DarkGhostHunter\Laraconfig\Eloquent\Setting;
+use DonCamillo1\Laraconfig\Eloquent\Metadata;
+use DonCamillo1\Laraconfig\Eloquent\Setting;
 use DateTimeInterface;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Support\Arr;
