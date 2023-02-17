@@ -1,8 +1,8 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig;
+namespace DonCamillo1\Laraconfig;
 
-use DarkGhostHunter\Laraconfig\Eloquent\Setting;
+use DonCamillo1\Laraconfig\Eloquent\Setting;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
