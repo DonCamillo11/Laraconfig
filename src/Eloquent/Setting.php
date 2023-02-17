@@ -1,9 +1,9 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig\Eloquent;
+namespace DonCamillo1\Laraconfig\Eloquent;
 
-use DarkGhostHunter\Laraconfig\MorphManySettings;
-use DarkGhostHunter\Laraconfig\SettingsCache;
+use DonCamillo1\Laraconfig\MorphManySettings;
+use DonCamillo1\Laraconfig\SettingsCache;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
