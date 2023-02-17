@@ -1,6 +1,6 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig;
+namespace DonCamillo1\Laraconfig;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -17,7 +17,7 @@ trait HasConfig
     /**
      * Returns the settings relationship.
      *
-     * @return \DarkGhostHunter\Laraconfig\MorphManySettings
+     * @return \DonCamillo1\Laraconfig\MorphManySettings
      */
     public function settings(): MorphManySettings
     {
