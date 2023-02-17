@@ -1,10 +1,10 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig\Migrator\Pipes;
+namespace DonCamillo1\Laraconfig\Migrator\Pipes;
 
 use Closure;
-use DarkGhostHunter\Laraconfig\HasConfig;
-use DarkGhostHunter\Laraconfig\Migrator\Data;
+use DonCamillo1\Laraconfig\HasConfig;
+use DonCamillo1\Laraconfig\Migrator\Data;
 use Generator;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Database\Eloquent\Model;
