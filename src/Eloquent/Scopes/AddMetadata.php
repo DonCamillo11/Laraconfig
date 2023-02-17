@@ -1,8 +1,8 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig\Eloquent\Scopes;
+namespace DonCamillo1\Laraconfig\Eloquent\Scopes;
 
-use DarkGhostHunter\Laraconfig\Eloquent\Metadata;
+use DonCamillo1\Laraconfig\Eloquent\Metadata;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Scope;
