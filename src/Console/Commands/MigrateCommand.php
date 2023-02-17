@@ -1,9 +1,9 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig\Console\Commands;
+namespace DonCamillo1\Laraconfig\Console\Commands;
 
-use DarkGhostHunter\Laraconfig\Migrator\Data;
-use DarkGhostHunter\Laraconfig\Migrator\Migrator;
+use DonCamillo1\Laraconfig\Migrator\Data;
+use DonCamillo1\Laraconfig\Migrator\Migrator;
 use Illuminate\Console\Command;
 use Illuminate\Console\OutputStyle;
 use RuntimeException;
