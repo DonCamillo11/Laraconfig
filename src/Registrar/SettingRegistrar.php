@@ -1,6 +1,6 @@
 <?php
 
-namespace DarkGhostHunter\Laraconfig\Registrar;
+namespace DonCamillo1\Laraconfig\Registrar;
 
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;
