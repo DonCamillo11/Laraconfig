@@ -1,8 +1,8 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Eloquent\Scopes;
+namespace DonCamillo11\Laraconfig\Eloquent\Scopes;
 
-use DonCamillo1\Laraconfig\Eloquent\Metadata;
+use DonCamillo11\Laraconfig\Eloquent\Metadata;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Scope;
@@ -18,7 +18,7 @@ class AddMetadata implements Scope
      * Apply the scope to a given Eloquent query builder.
      *
      * @param  \Illuminate\Database\Eloquent\Builder  $builder
-     * @param  \Illuminate\Database\Eloquent\Model|\DarkGhostHunter\Laraconfig\HasConfig  $model
+     * @param  \Illuminate\Database\Eloquent\Model|\DonCamillo11\Laraconfig\HasConfig  $model
      *
      * @return void
      */

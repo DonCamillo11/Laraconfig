@@ -2,11 +2,11 @@
 
 namespace Tests;
 
-use DarkGhostHunter\Laraconfig\Eloquent\Metadata;
-use DarkGhostHunter\Laraconfig\Eloquent\Scopes\FilterBags;
-use DarkGhostHunter\Laraconfig\Eloquent\Setting;
-use DarkGhostHunter\Laraconfig\HasConfig;
-use DarkGhostHunter\Laraconfig\SettingsCollection;
+use DonCamillo11\Laraconfig\Eloquent\Metadata;
+use DonCamillo11\Laraconfig\Eloquent\Scopes\FilterBags;
+use DonCamillo11\Laraconfig\Eloquent\Setting;
+use DonCamillo11\Laraconfig\HasConfig;
+use DonCamillo11\Laraconfig\SettingsCollection;
 use Error;
 use Exception;
 use Illuminate\Contracts\Cache\Factory;
@@ -181,7 +181,7 @@ class HasConfigTest extends BaseTestCase
 
     public function test_model_sets_config_not_forcefully(): void
     {
-        /** @var \DarkGhostHunter\Laraconfig\HasConfig $user */
+        /** @var \DonCamillo11\Laraconfig\HasConfig $user */
         $user = DummyModel::find(1);
 
         $user->settings->disable('foo');
@@ -386,7 +386,7 @@ class HasConfigTest extends BaseTestCase
             }
         };
 
-        /** @var \DarkGhostHunter\Laraconfig\HasConfig $instance */
+        /** @var \DonCamillo11\Laraconfig\HasConfig $instance */
         $instance = $model->forceCreate([
             'name'     => 'dummy',
             'email'    => 'dummy@email.com',
@@ -409,7 +409,7 @@ class HasConfigTest extends BaseTestCase
 
     public function test_sets_default_from_database(): void
     {
-        /** @var \DarkGhostHunter\Laraconfig\Eloquent\Setting $setting */
+        /** @var \DonCamillo11\Laraconfig\Eloquent\Setting $setting */
         $setting = Setting::find(1);
 
         $setting->setRawAttributes(['default' => null])->syncOriginal();

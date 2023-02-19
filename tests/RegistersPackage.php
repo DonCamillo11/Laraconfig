@@ -2,8 +2,8 @@
 
 namespace Tests;
 
-use DarkGhostHunter\Laraconfig\LaraconfigServiceProvider;
-use DarkGhostHunter\Laraconfig\Facades\Setting;
+use DonCamillo11\Laraconfig\LaraconfigServiceProvider;
+use DonCamillo11\Laraconfig\Facades\Setting;
 
 trait RegistersPackage
 {

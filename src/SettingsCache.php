@@ -1,6 +1,6 @@
 <?php
 
-namespace DonCamillo1\Laraconfig;
+namespace DonCamillo11\Laraconfig;
 
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Contracts\Cache\Repository;
@@ -45,7 +45,7 @@ class SettingsCache implements Serializable
     /**
      * Set the settings collection to persist.
      *
-     * @param  \DonCamillo1\Laraconfig\SettingsCollection  $settings
+     * @param  \DonCamillo11\Laraconfig\SettingsCollection  $settings
      *
      * @return \DarkGhostHunter\Laraconfig\SettingsCache
      */

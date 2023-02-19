@@ -1,10 +1,10 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Migrator\Pipes;
+namespace DonCamillo11\Laraconfig\Migrator\Pipes;
 
 use Closure;
-use DonCamillo1\Laraconfig\HasConfig;
-use DonCamillo1\Laraconfig\Migrator\Data;
+use DonCamillo11\Laraconfig\HasConfig;
+use DonCamillo11\Laraconfig\Migrator\Data;
 use Generator;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Database\Eloquent\Model;
@@ -35,7 +35,7 @@ class FindModelsWithSettings
     /**
      * Handles the Settings migration.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Migrator\Data  $data
+     * @param  \DonCamillo11\Laraconfig\Migrator\Data  $data
      * @param  \Closure  $next
      *
      * @return mixed

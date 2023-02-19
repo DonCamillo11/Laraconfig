@@ -1,9 +1,9 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Eloquent\Casts;
+namespace DonCamillo11\Laraconfig\Eloquent\Casts;
 
-use DonCamillo1\Laraconfig\Eloquent\Metadata;
-use DonCamillo1\Laraconfig\Eloquent\Setting;
+use DonCamillo11\Laraconfig\Eloquent\Metadata;
+use DonCamillo11\Laraconfig\Eloquent\Setting;
 use DateTimeInterface;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Support\Arr;
@@ -18,7 +18,7 @@ class DynamicCasting implements CastsAttributes
     /**
      * Transform the attribute from the underlying model values.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Eloquent\Setting|\DarkGhostHunter\Laraconfig\Eloquent\Metadata  $model
+     * @param  \DonCamillo11\Laraconfig\Eloquent\Setting|\DonCamillo11\Laraconfig\Eloquent\Metadata  $model
      * @param  string  $key
      * @param  mixed  $value
      * @param  array  $attributes
@@ -54,7 +54,7 @@ class DynamicCasting implements CastsAttributes
     /**
      * Transform the attribute to its underlying model values.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Eloquent\Setting|\DarkGhostHunter\Laraconfig\Eloquent\Metadata  $model
+     * @param  \DonCamillo11\Laraconfig\Eloquent\Setting|\DonCamillo11\Laraconfig\Eloquent\Metadata  $model
      * @param  string  $key
      * @param  mixed  $value
      * @param  array  $attributes

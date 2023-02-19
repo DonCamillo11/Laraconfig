@@ -1,6 +1,6 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Migrator;
+namespace DonCamillo11\Laraconfig\Migrator;
 
 use Illuminate\Pipeline\Pipeline;
 

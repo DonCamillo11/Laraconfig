@@ -1,11 +1,11 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Migrator\Pipes;
+namespace DonCamillo11\Laraconfig\Migrator\Pipes;
 
 use Closure;
-use DonCamillo1\Laraconfig\Laraconfig;
-use DonCamillo1\Laraconfig\Migrator\Data;
-use DonCamillo1\Laraconfig\MorphManySettings;
+use DonCamillo11\Laraconfig\Laraconfig;
+use DonCamillo11\Laraconfig\Migrator\Data;
+use DonCamillo11\Laraconfig\MorphManySettings;
 use Illuminate\Console\OutputStyle;
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Contracts\Config\Repository;
@@ -34,7 +34,7 @@ class InvalidateCache
     /**
      * Handles the Settings migration.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Migrator\Data  $data
+     * @param  \DonCamillo11\Laraconfig\Migrator\Data  $data
      * @param  \Closure  $next
      *
      * @return mixed
@@ -57,7 +57,7 @@ class InvalidateCache
     /**
      * Check if we should cycle through models to invalidate their keys.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Migrator\Data  $data
+     * @param  \DonCamillo11\Laraconfig\Migrator\Data  $data
      *
      * @return bool
      */

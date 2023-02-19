@@ -1,9 +1,9 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Eloquent;
+namespace DonCamillo11\Laraconfig\Eloquent;
 
-use DonCamillo1\Laraconfig\MorphManySettings;
-use DonCamillo1\Laraconfig\SettingsCache;
+use DonCamillo11\Laraconfig\MorphManySettings;
+use DonCamillo11\Laraconfig\SettingsCache;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
@@ -22,7 +22,7 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @property-read string $group // Added by the "add-metadata" global scope.
  * @property-read string $bag // Added by the "add-metadata" global scope.
  *
- * @property-read \DarkGhostHunter\Laraconfig\Eloquent\Metadata $metadata
+ * @property-read \DonCamillo11\Laraconfig\Eloquent\Metadata $metadata
  */
 class Setting extends Model
 {
@@ -68,7 +68,7 @@ class Setting extends Model
     /**
      * Settings cache repository.
      *
-     * @var \DarkGhostHunter\Laraconfig\SettingsCache|null
+     * @var \DonCamillo11\Laraconfig\SettingsCache|null
      */
     public ?SettingsCache $cache = null;
 
@@ -122,7 +122,7 @@ class Setting extends Model
     /**
      * Fills the settings data from a Metadata model instance.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Eloquent\Metadata  $metadata
+     * @param  \DonCamillo11\Laraconfig\Eloquent\Metadata  $metadata
      *
      * @return $this
      */

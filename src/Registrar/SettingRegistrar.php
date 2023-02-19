@@ -1,6 +1,6 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Registrar;
+namespace DonCamillo11\Laraconfig\Registrar;
 
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;
@@ -85,7 +85,7 @@ class SettingRegistrar
     /**
      * Returns a collection of declaration that migrates to another.
      *
-     * @return \Illuminate\Support\Collection|\DarkGhostHunter\Laraconfig\Registrar\Declaration[]
+     * @return \Illuminate\Support\Collection|\DonCamillo11\Laraconfig\Registrar\Declaration[]
      */
     public function getMigrable(): Collection
     {
@@ -98,7 +98,7 @@ class SettingRegistrar
      *
      * @param  string  $name
      *
-     * @return \DarkGhostHunter\Laraconfig\Registrar\Declaration
+     * @return \DonCamillo11\Laraconfig\Registrar\Declaration
      */
     public function name(string $name): Declaration
     {

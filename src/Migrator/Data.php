@@ -1,6 +1,6 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Migrator;
+namespace DonCamillo11\Laraconfig\Migrator;
 
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Collection;
@@ -13,14 +13,14 @@ class Data
     /**
      * Database Metadata.
      *
-     * @var \Illuminate\Database\Eloquent\Collection|\DarkGhostHunter\Laraconfig\Eloquent\Metadata[]
+     * @var \Illuminate\Database\Eloquent\Collection|\DonCamillo11\Laraconfig\Eloquent\Metadata[]
      */
     public EloquentCollection $metadata;
 
     /**
      * Declarations.
      *
-     * @var \Illuminate\Support\Collection|\DarkGhostHunter\Laraconfig\Registrar\Declaration[]
+     * @var \Illuminate\Support\Collection|\DonCamillo11\Laraconfig\Registrar\Declaration[]
      */
     public Collection $declarations;
 

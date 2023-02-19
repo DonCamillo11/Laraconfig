@@ -1,6 +1,6 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Console\Commands;
+namespace DonCamillo11\Laraconfig\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

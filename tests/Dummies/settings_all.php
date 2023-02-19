@@ -1,6 +1,6 @@
 <?php
 
-use DarkGhostHunter\Laraconfig\Facades\Setting;
+use DonCamillo11\Laraconfig\Facades\Setting;
 
 Setting::name('array')->array();
 Setting::name('boolean')->boolean();

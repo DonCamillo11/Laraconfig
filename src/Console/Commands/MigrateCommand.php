@@ -1,9 +1,9 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Console\Commands;
+namespace DonCamillo11\Laraconfig\Console\Commands;
 
-use DonCamillo1\Laraconfig\Migrator\Data;
-use DonCamillo1\Laraconfig\Migrator\Migrator;
+use DonCamillo11\Laraconfig\Migrator\Data;
+use DonCamillo11\Laraconfig\Migrator\Migrator;
 use Illuminate\Console\Command;
 use Illuminate\Console\OutputStyle;
 use RuntimeException;
@@ -34,8 +34,8 @@ class MigrateCommand extends Command
     /**
      * MigrateCommand constructor.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Migrator\Migrator  $migrator
-     * @param  \DarkGhostHunter\Laraconfig\Migrator\Data  $data
+     * @param  \DonCamillo11\Laraconfig\Migrator\Migrator  $migrator
+     * @param  \DonCamillo11\Laraconfig\Migrator\Data  $data
      */
     public function __construct(protected Migrator $migrator, protected Data $data)
     {

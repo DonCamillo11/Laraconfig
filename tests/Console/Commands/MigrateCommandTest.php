@@ -2,11 +2,11 @@
 
 namespace Tests\Console\Commands;
 
-use DarkGhostHunter\Laraconfig\Eloquent\Metadata;
-use DarkGhostHunter\Laraconfig\Eloquent\Setting as SettingModel;
-use DarkGhostHunter\Laraconfig\Facades\Setting;
-use DarkGhostHunter\Laraconfig\Migrator\Data;
-use DarkGhostHunter\Laraconfig\Registrar\SettingRegistrar;
+use DonCamillo11\Laraconfig\Eloquent\Metadata;
+use DonCamillo11\Laraconfig\Eloquent\Setting as SettingModel;
+use DonCamillo11\Laraconfig\Facades\Setting;
+use DonCamillo11\Laraconfig\Migrator\Data;
+use DonCamillo11\Laraconfig\Registrar\SettingRegistrar;
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Contracts\Cache\Store;
 use Illuminate\Database\Eloquent\Model;

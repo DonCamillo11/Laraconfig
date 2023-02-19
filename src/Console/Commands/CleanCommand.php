@@ -1,8 +1,8 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Console\Commands;
+namespace DonCamillo11\Laraconfig\Console\Commands;
 
-use DonCamillo1\Laraconfig\Eloquent\Setting;
+use DonCamillo11\Laraconfig\Eloquent\Setting;
 use Illuminate\Console\Command;
 
 /**

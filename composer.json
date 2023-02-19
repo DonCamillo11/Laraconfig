@@ -31,16 +31,16 @@
   },
   "autoload": {
     "psr-4": {
-      "DonCamillo1\\Laraconfig\\": "src"
+      "DonCamillo11\\Laraconfig\\": "src"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "DonCamillo1\\Laraconfig\\LaraconfigServiceProvider"
+        "DonCamillo11\\Laraconfig\\LaraconfigServiceProvider"
       ],
       "aliases": {
-        "Setting": "DonCamillo1\\Laraconfig\\Facades\\Setting"
+        "Setting": "DonCamillo11\\Laraconfig\\Facades\\Setting"
       }
     }
   },

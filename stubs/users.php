@@ -1,5 +1,5 @@
 <?php
 
-use DarkGhostHunter\Laraconfig\Facades\Setting;
+use DonCamillo11\Laraconfig\Facades\Setting;
 
 Setting::name('dark_mode')->boolean();

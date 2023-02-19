@@ -1,8 +1,8 @@
 <?php
 
-namespace DonCamillo1\Laraconfig;
+namespace DonCamillo11\Laraconfig;
 
-use DonCamillo1\Laraconfig\Eloquent\Metadata;
+use DonCamillo11\Laraconfig\Eloquent\Metadata;
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
@@ -12,7 +12,7 @@ use Illuminate\Support\Arr;
 
 /**
  * @mixin \Illuminate\Database\Eloquent\Builder
- * @mixin \DonCamillo1\Laraconfig\Eloquent\Setting
+ * @mixin \DonCamillo11\Laraconfig\Eloquent\Setting
  *
  * @method Model|HasConfig getParent()
  */
@@ -28,7 +28,7 @@ class MorphManySettings extends MorphMany
     /**
      * The settings cache helper.
      *
-     * @var \DonCamillo1\Laraconfig\SettingsCache|null
+     * @var \DonCamillo11\Laraconfig\SettingsCache|null
      */
     protected ?SettingsCache $cache = null;
 

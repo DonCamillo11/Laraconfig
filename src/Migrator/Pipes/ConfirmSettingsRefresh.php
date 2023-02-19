@@ -1,11 +1,11 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Migrator\Pipes;
+namespace DonCamillo11\Laraconfig\Migrator\Pipes;
 
 use Closure;
-use DonCamillo1\Laraconfig\Eloquent\Metadata;
-use DonCamillo1\Laraconfig\Eloquent\Setting;
-use DonCamillo1\Laraconfig\Migrator\Data;
+use DonCamillo11\Laraconfig\Eloquent\Metadata;
+use DonCamillo11\Laraconfig\Eloquent\Setting;
+use DonCamillo11\Laraconfig\Migrator\Data;
 use Illuminate\Console\OutputStyle;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Database\Eloquent\Collection;
@@ -34,7 +34,7 @@ class ConfirmSettingsRefresh
     /**
      * Handles the Settings migration.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Migrator\Data  $data
+     * @param  \DonCamillo11\Laraconfig\Migrator\Data  $data
      * @param  \Closure  $next
      *
      * @return mixed

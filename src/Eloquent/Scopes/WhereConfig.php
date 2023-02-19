@@ -1,6 +1,6 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Eloquent\Scopes;
+namespace DonCamillo11\Laraconfig\Eloquent\Scopes;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

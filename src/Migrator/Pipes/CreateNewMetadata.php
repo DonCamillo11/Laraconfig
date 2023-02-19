@@ -1,12 +1,12 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Migrator\Pipes;
+namespace DonCamillo11\Laraconfig\Migrator\Pipes;
 
 use Closure;
-use DonCamillo1\Laraconfig\Eloquent\Metadata;
-use DonCamillo1\Laraconfig\Eloquent\Setting;
-use DonCamillo1\Laraconfig\Migrator\Data;
-use DonCamillo1\Laraconfig\Registrar\Declaration;
+use DonCamillo11\Laraconfig\Eloquent\Metadata;
+use DonCamillo11\Laraconfig\Eloquent\Setting;
+use DonCamillo11\Laraconfig\Migrator\Data;
+use DonCamillo11\Laraconfig\Registrar\Declaration;
 use Illuminate\Console\OutputStyle;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
@@ -30,7 +30,7 @@ class CreateNewMetadata
     /**
      * Handles the Settings migration.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Migrator\Data  $data
+     * @param  \DonCamillo11\Laraconfig\Migrator\Data  $data
      * @param  \Closure  $next
      *
      * @return mixed
@@ -66,9 +66,9 @@ class CreateNewMetadata
     /**
      * Creates the metadata from the declaration.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Registrar\Declaration  $declaration
+     * @param  \DonCamillo11\Laraconfig\Registrar\Declaration  $declaration
      *
-     * @return \DarkGhostHunter\Laraconfig\Eloquent\Metadata
+     * @return \DonCamillo11\Laraconfig\Eloquent\Metadata
      */
     protected function createMetadata(Declaration $declaration): Metadata
     {
@@ -78,7 +78,7 @@ class CreateNewMetadata
     /**
      * Returns a collection of declarations that don't exist in the database.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Migrator\Data  $data
+     * @param  \DonCamillo11\Laraconfig\Migrator\Data  $data
      *
      * @return \Illuminate\Support\Collection
      */
@@ -92,10 +92,10 @@ class CreateNewMetadata
     /**
      * Fill the settings of the newly created Metadata.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Registrar\Declaration  $declaration
-     * @param  \DarkGhostHunter\Laraconfig\Eloquent\Metadata  $metadata
+     * @param  \DonCamillo11\Laraconfig\Registrar\Declaration  $declaration
+     * @param  \DonCamillo11\Laraconfig\Eloquent\Metadata  $metadata
      * @param  \Illuminate\Support\Collection  $models
-     * @param  \DarkGhostHunter\Laraconfig\Migrator\Data  $data
+     * @param  \DonCamillo11\Laraconfig\Migrator\Data  $data
      *
      * @return int
      */
@@ -131,7 +131,7 @@ class CreateNewMetadata
     /**
      * Fill the settings for each of the models using settings.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Eloquent\Metadata  $metadata
+     * @param  \DonCamillo11\Laraconfig\Eloquent\Metadata  $metadata
      * @param  \Illuminate\Support\Collection|\Illuminate\Database\Eloquent\Model[]  $models
      *
      * @return int
@@ -164,8 +164,8 @@ class CreateNewMetadata
     /**
      * Copy the settings for each of the models from the old setting.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Eloquent\Metadata  $new
-     * @param  \DarkGhostHunter\Laraconfig\Eloquent\Metadata  $old
+     * @param  \DonCamillo11\Laraconfig\Eloquent\Metadata  $new
+     * @param  \DonCamillo11\Laraconfig\Eloquent\Metadata  $old
      *
      * @return int
      */
@@ -190,9 +190,9 @@ class CreateNewMetadata
     /**
      * Feeds each old setting to a procedure that saves the new setting value.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Registrar\Declaration  $declaration
-     * @param  \DarkGhostHunter\Laraconfig\Eloquent\Metadata  $new
-     * @param  \DarkGhostHunter\Laraconfig\Eloquent\Metadata  $old
+     * @param  \DonCamillo11\Laraconfig\Registrar\Declaration  $declaration
+     * @param  \DonCamillo11\Laraconfig\Eloquent\Metadata  $new
+     * @param  \DonCamillo11\Laraconfig\Eloquent\Metadata  $old
      *
      * @return int
      */
@@ -200,7 +200,7 @@ class CreateNewMetadata
     {
         $affected = 0;
 
-        /** @var \DarkGhostHunter\Laraconfig\Eloquent\Setting $setting */
+        /** @var \DonCamillo11\Laraconfig\Eloquent\Setting $setting */
         foreach (Setting::query()->where('metadata_id', $old->getKey())->lazyById() as $setting) {
             Setting::query()
                 ->insert([

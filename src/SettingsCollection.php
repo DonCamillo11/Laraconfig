@@ -1,8 +1,8 @@
 <?php
 
-namespace DonCamillo1\Laraconfig;
+namespace DonCamillo11\Laraconfig;
 
-use DonCamillo1\Laraconfig\Eloquent\Setting;
+use DonCamillo11\Laraconfig\Eloquent\Setting;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
@@ -13,7 +13,7 @@ use RuntimeException;
 /**
  * Class SettingsCollection
  *
- * @package DarkGhostHunter\Laraconfig
+ * @package DonCamillo11\Laraconfig
  *
  * @method Setting get(string $name, mixed $default = null)
  */
@@ -29,7 +29,7 @@ class SettingsCollection extends Collection
      * is garbage collected. Once done, a `__destruct()` call will be fired, and
      * that is when we will make the cache store regenerate the settings there.
      *
-     * @var \DarkGhostHunter\Laraconfig\SettingsCache|null
+     * @var \DonCamillo11\Laraconfig\SettingsCache|null
      */
     public ?SettingsCache $cache = null;
 
@@ -43,7 +43,7 @@ class SettingsCollection extends Collection
     /**
      * Returns all the settings grouped by their group name.
      *
-     * @return static|\DarkGhostHunter\Laraconfig\Eloquent\Setting[]
+     * @return static|\DonCamillo11\Laraconfig\Eloquent\Setting[]
      */
     public function groups(): static
     {

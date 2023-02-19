@@ -1,13 +1,13 @@
 <?php
 
-namespace DonCamillo1\Laraconfig;
+namespace DonCamillo11\Laraconfig;
 
 use Illuminate\Database\Eloquent\Model;
 
 use function method_exists;
 
 /**
- * @property-read \DarkGhostHunter\Laraconfig\SettingsCollection<\DarkGhostHunter\Laraconfig\Eloquent\Setting>|\DarkGhostHunter\Laraconfig\Eloquent\Setting[] $settings
+ * @property-read \DonCamillo11\Laraconfig\SettingsCollection<\DonCamillo11\Laraconfig\Eloquent\Setting>|\DonCamillo11\Laraconfig\Eloquent\Setting[] $settings
  *
  * @method \Illuminate\Database\Eloquent\Builder|static whereConfig(string|array $name, string $operator = null, $value = null, string $boolean = 'and')
  * @method \Illuminate\Database\Eloquent\Builder|static orWhereConfig(string|array $name, string $operator = null, $value = null)
@@ -17,7 +17,7 @@ trait HasConfig
     /**
      * Returns the settings relationship.
      *
-     * @return \DonCamillo1\Laraconfig\MorphManySettings
+     * @return \DonCamillo11\Laraconfig\MorphManySettings
      */
     public function settings(): MorphManySettings
     {

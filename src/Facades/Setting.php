@@ -1,13 +1,13 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Facades;
+namespace DonCamillo11\Laraconfig\Facades;
 
-use DonCamillo1\Laraconfig\Registrar\SettingRegistrar;
+use DonCamillo11\Laraconfig\Registrar\SettingRegistrar;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Illuminate\Support\Collection|\DarkGhostHunter\Laraconfig\Eloquent\Setting[] getSettings()
- * @method static \DarkGhostHunter\Laraconfig\Registrar\Declaration name(string $name)
+ * @method static \Illuminate\Support\Collection|\DonCamillo11\Laraconfig\Eloquent\Setting[] getSettings()
+ * @method static \DonCamillo11\Laraconfig\Registrar\Declaration name(string $name)
  */
 class Setting extends Facade
 {

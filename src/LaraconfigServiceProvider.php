@@ -1,8 +1,8 @@
 <?php
 
-namespace DonCamillo1\Laraconfig;
+namespace DonCamillo11\Laraconfig;
 
-use DonCamillo1\Laraconfig\Registrar\SettingRegistrar;
+use DonCamillo11\Laraconfig\Registrar\SettingRegistrar;
 use Generator;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Collection;

@@ -1,10 +1,10 @@
 <?php
 
-namespace DonCamillo1\Laraconfig\Migrator\Pipes;
+namespace DonCamillo11\Laraconfig\Migrator\Pipes;
 
 use Closure;
-use DonCamillo1\Laraconfig\Migrator\Data;
-use DonCamillo1\Laraconfig\Registrar\SettingRegistrar;
+use DonCamillo11\Laraconfig\Migrator\Data;
+use DonCamillo11\Laraconfig\Registrar\SettingRegistrar;
 
 /**
  * @internal
@@ -14,7 +14,7 @@ class LoadDeclarations
     /**
      * LoadDeclarations constructor.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Registrar\SettingRegistrar  $registrar
+     * @param  \DonCamillo11\Laraconfig\Registrar\SettingRegistrar  $registrar
      */
     public function __construct(protected SettingRegistrar $registrar)
     {
@@ -23,7 +23,7 @@ class LoadDeclarations
     /**
      * Handles the Settings migration.
      *
-     * @param  \DarkGhostHunter\Laraconfig\Migrator\Data  $data
+     * @param  \DonCamillo11\Laraconfig\Migrator\Data  $data
      * @param  \Closure  $next
      *
      * @return mixed
