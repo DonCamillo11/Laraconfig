@@ -105,7 +105,7 @@ Laraconfig is compatible with 7 types of settings, mirroring their PHP native ty
 All settings have a default value of `null`, but you can use the `default()` method to set a different initial value.
 
 ```php
-use DarkGhostHunter\Laraconfig\Facades\Setting;
+use DonCamillo11\Laraconfig\Facades\Setting;
 
 Setting::name('color')->string()->default('black');
 ```
@@ -160,7 +160,7 @@ Behind the scenes, Laraconfig will look into your Models for those using the `Ha
 Simply create a new setting and run `settings:migrate`. Existing settings won't be created again, as Laraconfig will check their existence before doing it.
 
 ```php
-use DarkGhostHunter\Laraconfig\Facades\Setting;
+use DonCamillo11\Laraconfig\Facades\Setting;
 
 Setting::name('color')->string()->default('black');
 
@@ -173,7 +173,7 @@ Setting::name('notifications')->boolean()->default(true);
 To remove old settings, simply remove their declaration and run `settings:migrate`. Laraconfig compares the settings declared to the ones created in the database, and removes those that no longer exist in the manifest at the end of the migration execution.
 
 ```php
-use DarkGhostHunter\Laraconfig\Facades\Setting;
+use DonCamillo11\Laraconfig\Facades\Setting;
 
 // Commenting this line will remove the "color" setting on migration.
 // Setting::name('color')->string()->default('black');
@@ -453,7 +453,7 @@ Laraconfig applies a query filter to exclude the settings not in the model bag. 
 There are two ways to disable the bag filter. The first one is relatively easy: simply use the `withoutGlobalScope()` at query time, which will allow to query all the settings available to the user.
 
 ```php
-use DarkGhostHunter\Laraconfig\Eloquent\Scopes\FilterBags;
+use DonCamillo11\Laraconfig\Eloquent\Scopes\FilterBags;
 
 $allSettings = $user->settings()->withoutGlobalScope(FilterBags::class)->get();
 ```
