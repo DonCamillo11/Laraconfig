@@ -567,7 +567,7 @@ public function test_user_has_settings(): void
 
 ## Security
 
-If you discover any security related issues, please email darkghosthunter@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email doncamillo1@web.de instead of using the issue tracker.
 
 ## License
 
