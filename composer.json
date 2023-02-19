@@ -1,12 +1,12 @@
 {
-  "name": "doncamillo1/laraconfig",
+  "name": "doncamillo11/laraconfig",
   "description": "Per-user settings repository system for Laravel",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "license": "MIT",
   "authors": [
     {
-      "name": "ConCamillo1",
+      "name": "ConCamillo11",
       "email": "doncamillo1@web.de"
     }
   ],
