@@ -73,7 +73,7 @@ Now, let's create some settings.
 Laraconfig makes managing user settings globally using a _manifest_ of sorts, the `settings/users.php` file. You will see a sample setting already written.
 
 ```php
-use DarkGhostHunter\Laraconfig\Facades\Setting;
+use DonCamillo11\Laraconfig\Facades\Setting;
 
 Setting::name('color')->string();
 ```
@@ -83,7 +83,7 @@ Setting::name('color')->string();
 To create a setting, use the `Setting` facade. You can start with setting the name, which must be unique, and then declare the type.
 
 ```php
-use DarkGhostHunter\Laraconfig\Facades\Setting;
+use DonCamillo11\Laraconfig\Facades\Setting;
 
 Setting::name('dark_mode')->boolean();
 ```
