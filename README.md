@@ -8,7 +8,7 @@ I may revisit this in the near future.
 
 ![Xavier von Erlach - Unsplash #ooR1jY2yFr4](https://images.unsplash.com/photo-1570221622224-3bb8f08f166c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=400&q=80)
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/darkghosthunter/laraconfig.svg)](https://packagist.org/packages/darkghosthunter/laraconfig) [![License](https://poser.pugx.org/darkghosthunter/laraconfig/license)](https://packagist.org/packages/darkghosthunter/laraconfig) ![](https://img.shields.io/packagist/php-v/darkghosthunter/laraconfig.svg) ![](https://github.com/DarkGhostHunter/Laraconfig/workflows/PHP%20Composer/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/DarkGhostHunter/Laraconfig/badge.svg?branch=master)](https://coveralls.io/github/DarkGhostHunter/Laraconfig?branch=master) [![Laravel Octane Compatible](https://img.shields.io/badge/Laravel%20Octane-Compatible-success?style=flat&logo=laravel)](https://github.com/laravel/octane)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/doncamillo1/laraconfig.svg)](https://packagist.org/packages/doncamillo1/laraconfig) [![License](https://poser.pugx.org/doncamillo1/laraconfig/license)](https://packagist.org/packages/doncamillo1/laraconfig) ![](https://img.shields.io/packagist/php-v/doncamillo1/laraconfig.svg) ![](https://github.com/DonCamillo11/Laraconfig/workflows/PHP%20Composer/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/DonCamillo11/Laraconfig/badge.svg?branch=master)](https://coveralls.io/github/DonCamillo11/Laraconfig?branch=master) [![Laravel Octane Compatible](https://img.shields.io/badge/Laravel%20Octane-Compatible-success?style=flat&logo=laravel)](https://github.com/laravel/octane)
 
 # Laraconfig
 
@@ -22,8 +22,8 @@ User::find(1)->settings->set('color', 'red');
 
 ## Requirements
 
-- Laravel 8.x
-- PHP 8.0 or later
+- Laravel 10.x
+- PHP 8.1 or later
 
 ## How it works
 
@@ -37,11 +37,11 @@ Since Laraconfig uses the Eloquent ORM behind the scenes, getting a one or all s
 
 You can install the package via composer.
 
-    composer require darkghosthunter/laraconfig
+    composer require doncamillo1/laraconfig
 
 First, publish and run the migrations. These will add two tables called `user_settings` and `user_settings_metadata`. One holds the values per user, the other the metadata of the setting, respectively.
 
-    php artisan vendor:publish --provider="DarkGhostHunter\Laraconfig\LaraconfigServiceProvider" --tag="migrations"
+    php artisan vendor:publish --provider="DonCamillo1\Laraconfig\LaraconfigServiceProvider" --tag="migrations"
     php artisan migrate
 
 > The migration uses a morph column to connect to the User. You can change it before migrating.
@@ -52,7 +52,7 @@ Second, add the `HasConfig` trait to the User models you want to have settings.
 namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use DarkGhostHunter\Laraconfig\HasConfig;
+use DonCamillo1\Laraconfig\HasConfig;
 
 class User extends Authenticatable
 {
