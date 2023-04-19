@@ -129,7 +129,7 @@ class MorphManySettings extends MorphMany
         foreach (Metadata::query()->lazyById(column: 'id') as $metadatum) {
             $setting = $query->make()->forceFill([
                 'metadata_id' => $metadatum->getKey(),
-                'value' => $metadatum->default
+                'value' => $metadatum->getRawOriginal('default')
             ]);
 
             $setting->saveQuietly();
