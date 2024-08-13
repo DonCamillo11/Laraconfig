@@ -22,7 +22,7 @@ class CreateUserSettingsTable extends Migration
             // $table->uuidMorphs('settable');
             $table->numericMorphs('settable');
 
-            $table->string('value')->nullable();
+            $table->string('value', 500)->nullable();
             $table->boolean('is_enabled')->default(true);
 
             $table->timestamps();
