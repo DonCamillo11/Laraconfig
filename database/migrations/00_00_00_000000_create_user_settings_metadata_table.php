@@ -19,7 +19,7 @@ class CreateUserSettingsMetadataTable extends Migration
 
             $table->string('name')->unique();
             $table->string('type');
-            $table->string('default')->nullable();
+            $table->string('default', 500)->nullable();
             $table->boolean('is_enabled')->default(true);
 
             $table->string('group')->default('default');
